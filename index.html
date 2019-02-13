@@ -8,15 +8,33 @@
     <style type="text/css">
         body {
             margin: 30px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <div class="forCelcius">
         <form action="">
-            Enter Temperature in celcius: <input type="floa"
+            Enter Temperature in celcius: <input type="number" id="celciusNum"/></br></br>
+            <input type="button" onclick="converIntoFahrenheit()" value="ConvertToFahrenheit"/>
+            </button>
+
         </form>
+        <p>The Converted value is : <br>
+            <span id="fahren"></span>
+        </p>
     </div>
+
+    <div class="forFahreinheit">
+            <form>
+                Enter Temperature in Fahreinheit: <input type="number" id="fahreinheitNum"/></br></br>
+                <input type="button" onclick="converIntoCelcius()" value="ConvertToCelcius"/>
+            </form>
+             <p>The Converted value is : <br>
+                <span id="celcius"></span>
+            </p>
+        </div>
+        <script src="script.js"></script>
     
 </body>
 </html>
